@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<style type="text/css">
+			.clearfix:before, .clearfix:after{
+				display: table;
+    		content: " ";
+			}
+			.clearfix:after{
+		    clear: both;
+			}
+			.list-card{
+				border:1px solid #ddd;
+				padding:10px;
+				margin-bottom: 10px;
+			}
+			.hidden{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>INPUT TEXTBOX:</h3>
+		<input type="text" class=" jquery_filter " placeholder="Search for Institute" data-search-items-wrapper-id="#institutes_list" data-search-item-class=".list-card" data-search-classes=".card-title,.address,.subject_badge" />
+
+		<h3>ITEM LIST :</h3>
+		<div id="institutes_list">
+			
+			<div class="list-card clearfix">
+				<div class="list-card-data">
+					<h3 class="card-title"><a target="_blank" href="/maindemoinstitute-academy/"> MainDemoInstitute Academy, Rajeev Nagar, New Delhi</a></h3>
+					<p>
+						<strong>Phn:</strong> 1234567890
+					</p>
+
+					<p> 
+						<strong>Address:</strong>
+						<span class="address">#35, 10th Main, Safdarjung Enclave, New Delhi</span> 
+					</p>
+
+					<p>
+						<strong>Subjects : </strong> 
+						<span class="badge subject_badge"> History, </span> 
+						<span class="badge subject_badge"> Public Administration </span> 
+					</p>
+
+					
+
+				</div>
+			</div>
+			
+			<div class="list-card clearfix ">
+				<div class="list-card-data">
+
+					<h3 class="card-title"><a target="_blank" href="/demo2institute-2/"> Demo2Institute 2, Street Name, Bangalore</a></h3>
+
+					<p>
+						<strong>Phn :</strong> 123457900
+					</p>
+
+					<p> 
+						<strong>Address: </strong> 
+						<span class="address"> Sample address </span> 
+					</p>
+
+					<p>
+						<strong>Subjects : </strong> 
+						<span class="badge subject_badge"> Geography ,</span>
+						<span class="badge subject_badge"> Ecology </span> 
+					</p>
+
+					
+
+				</div>
+
+			</div>
+			
+		</div>
+
+		<script   src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+		<script src="./jquery_filter_plugin.js"  ></script>
+		
+	</body>
+</html>
